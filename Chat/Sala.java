@@ -18,7 +18,7 @@ public class Sala extends Thread {
     }
 
     public void run() {
-        if(usuarios.size()<=2) {
+        if(usuarios.size()<=10) {
             String conexion = getName() + " se ha conectado a la sala. Hay "+usuarios.size()+" usuario/os conectados";
             for (int i = 0; i < usuarios.size(); i++) {
                 try {
